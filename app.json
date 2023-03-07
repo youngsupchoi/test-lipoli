@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "test-lipoli",
+    "slug": "test-lipoli",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "test-lipoli"
+}

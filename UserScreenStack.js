@@ -5,7 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./sources/Login";
 import Main from "./sources/screen/main/Main";
 import UserMainPage from "./sources/screen/user/UserMainPage";
-import UserGiftPiece from "./sources/screen/user/UserGiftPiece";
+import UserGiftPieceMain from "./sources/screen/user/userWishList/UserGiftPieceMain";
+import UserGifitPieceDetail from "./sources/screen/user/userWishList/UserGifitPieceDetail";
 /* function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -16,7 +17,8 @@ import UserGiftPiece from "./sources/screen/user/UserGiftPiece";
 
 const Stack = createNativeStackNavigator();
 
-const Stacks = () => {
+const Stacks = ({ setTabVisible, temp }) => {
+  console.log(temp);
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator
@@ -26,7 +28,11 @@ const Stacks = () => {
         }}
       >
         <Stack.Screen name="UserMainPage" component={UserMainPage} />
-        <Stack.Screen name="UserGiftPiece" component={UserGiftPiece} />
+        <Stack.Screen
+          name="UserGiftPieceMain"
+          component={UserGiftPieceMain}
+          param={"hi"}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

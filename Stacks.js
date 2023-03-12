@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./sources/Login";
 import Main from "./sources/screen/main/Main";
-import App from "./App";
+
 import TabStack from "./TabStack";
 /* function HomeScreen() {
   return (

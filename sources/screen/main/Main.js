@@ -3,6 +3,7 @@ import React from "react";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Main = () => {
+  console.log("hi");
   return (
     <View style={styles.container}>
       <Text>Main</Text>

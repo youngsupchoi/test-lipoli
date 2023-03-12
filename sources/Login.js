@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   logo: {
-    height: 85,
+    height: 80,
     resizeMode: "contain",
     marginBottom: 20,
   },

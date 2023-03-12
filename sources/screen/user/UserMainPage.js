@@ -1,15 +1,19 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const UserMainPage = ({ navigation }) => {
+const UserMainPage = ({ navigation, setTabVisible }) => {
   return (
     <View>
-      <Text
-        onPress={() => {
-          navigation.navigate("UserGiftPiece");
-        }}
-        style={{ backgroundColor: "yellow" }}
-      >
+      <Text style={{ backgroundColor: "green" }}>
+        <Text
+          onPress={() => {
+            /* setTabVisible(false); */
+            navigation.navigate("UserGiftPieceMain");
+          }}
+          style={{ backgroundColor: "yellow" }}
+        >
+          Button
+        </Text>
         UserMainPage
       </Text>
     </View>
